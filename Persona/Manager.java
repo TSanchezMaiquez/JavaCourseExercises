@@ -2,12 +2,12 @@ package Persona;
 
 import java.util.Date;
 
-public class Jefe extends Empleado implements ParaJefes{
+public class Manager extends Worker implements ForManagers{
 
 	private double incentivo;
 	private String cargo;
 	
-	public Jefe(String nombre, Date fechaAlta, double sueldo) {
+	public Manager(String nombre, Date fechaAlta, double sueldo) {
 		super(nombre, fechaAlta, sueldo);
 		
 	}
@@ -26,6 +26,12 @@ public class Jefe extends Empleado implements ParaJefes{
 	public String getCargo() {
 		
 		return "\nAdemas tiene el cargo "+cargo;
+	}
+
+	@Override
+	public double setBonus(double bonus) {
+		
+		return 2000 + bonus + ForWorkers.bonus;
 	}
 	
 	

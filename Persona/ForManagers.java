@@ -1,6 +1,6 @@
 package Persona;
 
-public interface ParaJefes {
+public interface ForManagers extends ForWorkers{
 
 	public abstract void setCargo(String cargo);
 	
