@@ -1,4 +1,4 @@
-package Switch;
+package Swing;
 
 import java.awt.event.KeyListener;
 

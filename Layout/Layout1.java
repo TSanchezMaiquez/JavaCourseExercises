@@ -1,5 +1,5 @@
 package Layout;
-import java.awt.FlowLayout;
+import java.awt.BorderLayout;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
@@ -49,15 +49,18 @@ class PanelWithLayout extends JPanel{
 			
 			//Dependiendo del programa en el que estemos, será mejor 
 			//implementar este Layout aqui o en Frame
-			setLayout(new FlowLayout(FlowLayout.LEFT));
 			
-			add(new JButton("Yellow"));
-			
-			add(new JButton("Red"));	
-			
-			add(new JButton("Blue"));	
+			//setLayout(new FlowLayout(FlowLayout.CENTER));
+			//setLayout(new FlowLayout(FlowLayout.CENTER, 50, 120));
+			setLayout(new BorderLayout(10,10));
 			
 			
+			
+			add(new JButton("Yellow"), BorderLayout.NORTH);		
+			add(new JButton("Red"), BorderLayout.SOUTH);		
+			add(new JButton("Blue"), BorderLayout.WEST);				
+			add(new JButton("Green"), BorderLayout.EAST);
+			add(new JButton("Black"));	
 		}
 }
 

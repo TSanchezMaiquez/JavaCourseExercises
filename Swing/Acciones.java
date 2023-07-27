@@ -1,4 +1,4 @@
-package Switch;
+package Swing;
 
 import java.awt.Color;
 import java.awt.event.ActionEvent;

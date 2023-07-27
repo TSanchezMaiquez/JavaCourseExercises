@@ -1,4 +1,4 @@
-package Switch;
+package Swing;
 
 import javax.swing.JFrame;
 
